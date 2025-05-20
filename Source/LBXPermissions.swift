@@ -37,7 +37,7 @@ open class LBXPermissions: NSObject {
     }
     
     //MARK: ---相机权限
-    static func authorizeCameraWith(completion: @escaping (Bool) -> Void) {
+    public static func authorizeCameraWith(completion: @escaping (Bool) -> Void) {
         let granted = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
         switch granted {
         case .authorized:
@@ -58,7 +58,7 @@ open class LBXPermissions: NSObject {
     }
     
     //MARK: 跳转到APP系统设置权限界面
-    static func jumpToSystemPrivacySetting() {
+    public static func jumpToSystemPrivacySetting() {
         guard let appSetting = URL(string: UIApplication.openSettingsURLString) else {
             return
         }

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'scan'
-    s.version      = '1.0.1'
+    s.version      = '1.0.2'
     s.summary      = 'ios swift scan wrapper'
     s.homepage     = 'https://github.com/biancheng347/scan'
     s.license      = 'MIT'
