@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
     s.summary      = 'ios swift scan wrapper'
     s.homepage     = 'https://github.com/biancheng347/scan'
     s.license      = 'MIT'
-    s.authors      = {'MxABC' => 'lbxia20091227@foxmail.com'}
+    s.authors      = {'MxABC' => 'biancheng347'}
     s.platform     = :ios, '8.0'
     s.source       = {:git => 'https://github.com/biancheng347/scan.git', :tag => s.version}
     s.ios.deployment_target = "8.0"
