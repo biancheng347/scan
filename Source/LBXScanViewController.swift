@@ -110,7 +110,10 @@ open class LBXScanViewController: UIViewController {
         qRScanView?.startScanAnimation()
 
         // 相机运行
-        scanObj?.start()
+        
+        DispatchQueue.global().async(execute: {
+            self.scanObj?.start()
+        })
     }
     
     open func drawScanView() {
