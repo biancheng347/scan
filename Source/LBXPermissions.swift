@@ -16,7 +16,7 @@ import AssetsLibrary
 open class LBXPermissions: NSObject {
 
     //MARK: ----获取相册权限
-    static func authorizePhotoWith(comletion: @escaping (Bool) -> Void) {
+    public static func authorizePhotoWith(comletion: @escaping (Bool) -> Void) {
         let granted = PHPhotoLibrary.authorizationStatus()
         switch granted {
         case PHAuthorizationStatus.authorized:
